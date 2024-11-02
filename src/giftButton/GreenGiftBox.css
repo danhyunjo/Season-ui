@@ -12,8 +12,22 @@
 
 .gift-box .box-body {
     z-index: 1;
+    position: relative;
 }
 
 .gift-box:hover .lid {
     transform: translateY(-40px) translateX(-20px) rotate(-30deg);
+}
+
+.popper {
+    position: absolute;
+    top: -37px;
+    left: 70px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.gift-box .box-body:hover .popper {
+    opacity: 1;
 }
