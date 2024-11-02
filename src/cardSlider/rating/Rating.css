@@ -1,0 +1,16 @@
+.rating-container {
+    display: flex;
+    gap: 1px;
+}
+
+.rating-container .star-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.rating-container .star-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
