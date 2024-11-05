@@ -31,7 +31,7 @@ const GiftBox = styled.div`
 
 const Lid = styled.div`
   margin-bottom: -20px;
-  /* margin-left: 20px; */
+  margin-left: -3px;
   z-index: 2;
   transition: transform 0.3s ease;
   transform: ${({ isHovered }) =>
