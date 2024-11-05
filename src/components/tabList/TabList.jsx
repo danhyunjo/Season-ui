@@ -69,7 +69,7 @@ const Label = styled.span`
 
 const AnimatedHat = styled(Hat)`
   position: absolute;
-  top: -45px;
+  top: -35px;
   transition: transform 0.3s ease;
   transform: translateY(-20px);
   animation: hatAppear 0.5s ease forwards;
