@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
+import Rating from './Rating';
 
 const CardStyle = styled.div`
   width: ${({ width }) => width}px;
@@ -40,11 +41,6 @@ const IconRow = styled.div`
   margin: ${({ height }) => height * 0.03}px 0;
 `;
 
-const Icon = styled.span`
-  font-size: ${({ width }) => width * 0.1}px;
-  margin: 0 2px;
-`;
-
 const HireButton = styled.button`
   padding: ${({ height }) => height * 0.05}px ${({ width }) => width * 0.1}px;
   background-color: #f3dfcd;
@@ -70,11 +66,7 @@ const Card = ({ title, description, buttonText, width, height }) => {
       </Title>
       <Description width={width}>{description}</Description>
       <IconRow height={height}>
-        <Icon width={width}>🦌</Icon>
-        <Icon width={width}>🦌</Icon>
-        <Icon width={width}>🦌</Icon>
-        <Icon width={width}>🦌</Icon>
-        <Icon width={width}>🦌</Icon>
+        <Rating totalStars={5} />
       </IconRow>
       <HireButton width={width} height={height}>
         {buttonText}
