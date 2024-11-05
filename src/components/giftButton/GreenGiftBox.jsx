@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 import { ReactComponent as GreenHat } from '../../icons/giftBoxGreenHat.svg';
 import { ReactComponent as GreenBody } from '../../icons/giftBoxGreenBody.svg';
 
@@ -7,39 +7,37 @@ const GreenGiftBox = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
-      css={giftBoxStyle}
+    <GiftBox
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div css={lidStyle(isHovered)}>
+      <Lid isHovered={isHovered}>
         <GreenHat />
-      </div>
-      <div css={boxBodyStyle}>
+      </Lid>
+      <BoxBody>
         <GreenBody />
-      </div>
-    </div>
+      </BoxBody>
+    </GiftBox>
   );
 };
 
 export default GreenGiftBox;
 
-const giftBoxStyle = css`
+const GiftBox = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-const lidStyle = isHovered => css`
+const Lid = styled.div`
   margin-bottom: -20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   z-index: 2;
   transition: transform 0.3s ease;
-  transform: ${isHovered
-    ? 'translateY(-40px) translateX(-20px) rotate(-30deg)'
-    : 'none'};
+  transform: ${({ isHovered }) =>
+    isHovered ? 'translateY(-40px) translateX(-20px) rotate(-30deg)' : 'none'};
 `;
 
-const boxBodyStyle = css`
+const BoxBody = styled.div`
   z-index: 1;
   position: relative;
 `;
