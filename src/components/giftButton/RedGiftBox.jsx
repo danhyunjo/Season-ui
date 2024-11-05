@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { ReactComponent as GreenHat } from '../../icons/giftBoxGreenHat.svg';
-import { ReactComponent as GreenBody } from '../../icons/giftBoxGreenBody.svg';
+import { ReactComponent as RedHat } from '../../icons/giftBoxRedHat.svg';
+import { ReactComponent as RedBody } from '../../icons/giftBoxRedBody.svg';
 
-const GreenGiftBox = () => {
+const RedGiftBox = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -12,16 +12,16 @@ const GreenGiftBox = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Lid isHovered={isHovered}>
-        <GreenHat />
+        <RedHat />
       </Lid>
       <BoxBody>
-        <GreenBody />
+        <RedBody />
       </BoxBody>
     </GiftBox>
   );
 };
 
-export default GreenGiftBox;
+export default RedGiftBox;
 
 const GiftBox = styled.div`
   display: flex;
