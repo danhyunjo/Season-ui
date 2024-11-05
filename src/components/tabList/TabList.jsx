@@ -4,11 +4,6 @@ import styled from '@emotion/styled';
 import { ReactComponent as Hat } from '../../icons/hat.svg';
 import { ReactComponent as BladHead } from '../../icons/bald head.svg';
 
-//전체 파일 사용자 입력 받게끔 고치기
-//코드 형태 고치기
-//모자 넣기+ 애니매이션
-//스토리북 고치기
-
 const TabList = ({ tabs }) => {
   const [selectedTab, setSelectedTab] = useState(null);
 

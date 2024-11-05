@@ -10,9 +10,9 @@ export default {
   argTypes: {
     tabs: {
       control: {
-        type: 'object',
+        type: 'array',
       },
-      defaultValue: [{ label: 'Home' }, { label: 'About' }, { label: 'Event' }],
+      description: 'tab option들의 정보를 담은 배열입니다',
     },
   },
 };
@@ -20,6 +20,4 @@ export default {
 const Template = args => <TabList {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  tabs: [{ label: 'Home' }, { label: 'About' }, { label: 'Event' }],
-};
+Default.args = {};
