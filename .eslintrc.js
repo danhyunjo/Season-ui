@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: ['react', 'jsx-a11y', 'prettier', '@emotion'],
   rules: {
-    'prettier/prettier': ['error', { endOfLine: 'lf' }],
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/no-unknown-property': ['error', { ignore: ['css'] }],
     'react/react-in-jsx-scope': 'off',
   },
