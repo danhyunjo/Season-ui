@@ -27,9 +27,9 @@ export default TabList;
 TabList.propTypes = {
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
     })
-  ).isRequired,
+  ),
 };
 
 TabList.defaultProps = {

@@ -7,6 +7,12 @@ export default {
   parameters: {
     layout: 'centered',
   },
+  argTypes: {
+    size: {
+      type: 'number',
+      description: '로딩 컴포넌트의 크기를 px 단위로 조절합니다.',
+    },
+  },
 };
 
 const Template = args => <Loading {...args} />;

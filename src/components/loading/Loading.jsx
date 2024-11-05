@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 import { ReactComponent as Hat } from '../../icons/hat.svg';
 import { ReactComponent as BladHead } from '../../icons/bald head.svg';
 
-const Loading = () => {
+const Loading = ({ size }) => {
   return (
-    <SantaContainer>
+    <SantaContainer size={size}>
       <Santa>
         <IconWrapper>
           <BladHead />
@@ -30,13 +31,21 @@ const Loading = () => {
 
 export default Loading;
 
+Loading.propTypes = {
+  size: PropTypes.number,
+};
+
+Loading.defaultProps = {
+  size: 50,
+};
+
 const SantaContainer = styled.div`
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transform: scale(0.5);
+  transform: ${({ size }) => `scale(${size / 100})`};
 `;
 
 const Santa = styled.div`

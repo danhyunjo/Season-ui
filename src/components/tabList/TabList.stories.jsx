@@ -20,4 +20,6 @@ export default {
 const Template = args => <TabList {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  tabs: [{ label: 'Home' }, { label: 'About' }, { label: 'Event' }],
+};
