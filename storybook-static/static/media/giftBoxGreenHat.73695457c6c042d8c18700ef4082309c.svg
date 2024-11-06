@@ -1,0 +1,42 @@
+var _rect, _path, _path2, _path3, _path4, _path5, _path6;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgGiftBoxGreenHat(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 145,
+    height: 72,
+    viewBox: "0 0 161 72",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 2.5,
+    y: 50.011,
+    width: 134.51,
+    height: 19.489,
+    rx: 4.5,
+    fill: "#fff",
+    stroke: "#436E53",
+    strokeWidth: 5
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#436E53",
+    d: "M49.328 51.509h1.616v19.116h-1.616z"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    stroke: "#436E53",
+    d: "M49.328 51.509h1.616v19.116h-1.616z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "#436E53",
+    d: "M89.437 51.509h1.616v19.116h-1.616z"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    stroke: "#436E53",
+    d: "M89.437 51.509h1.616v19.116h-1.616z"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "M70.627 49.697c-2.47-18.512 1.046-53.789 34.877-46.792 42.289 8.747-31.39 50.728-34.877 46.792zm0 0C68.592 35.412 59.815 8.327 40.98 14.275c-23.542 7.435 27.03 37.172 29.646 35.422z",
+    stroke: "#436E53",
+    strokeWidth: 4
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M72.806 50.104c20.055-3.207 60.251-11.37 60.6-18.367.349-6.997 17.875-8.163 26.594-7.872M68.01 49.667c-16.857-2.77-51.618-10.146-55.803-17.493",
+    stroke: "#436E53",
+    strokeWidth: 4
+  })));
+}
+export default SvgGiftBoxGreenHat;

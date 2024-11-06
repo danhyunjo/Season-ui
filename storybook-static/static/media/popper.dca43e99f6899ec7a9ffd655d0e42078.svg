@@ -1,0 +1,75 @@
+var _circle, _circle2, _circle3, _circle4, _circle5, _circle6, _path, _path2, _path3, _path4, _path5, _path6, _path7, _path8, _path9, _path10, _path11;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgPopper(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 74,
+    height: 35,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    cx: 65.5,
+    cy: 5.5,
+    r: 2.5,
+    fill: "#E9DF5C"
+  })), _circle2 || (_circle2 = /*#__PURE__*/React.createElement("circle", {
+    cx: 40.5,
+    cy: 11.5,
+    r: 2.5,
+    fill: "#5CE9D8"
+  })), _circle3 || (_circle3 = /*#__PURE__*/React.createElement("circle", {
+    cx: 55.5,
+    cy: 17.5,
+    r: 1.5,
+    fill: "#63E95C"
+  })), _circle4 || (_circle4 = /*#__PURE__*/React.createElement("circle", {
+    cx: 63.5,
+    cy: 15.5,
+    r: 1.5,
+    fill: "#E95C5C"
+  })), _circle5 || (_circle5 = /*#__PURE__*/React.createElement("circle", {
+    cx: 43,
+    cy: 29,
+    r: 2,
+    fill: "#865CE9"
+  })), _circle6 || (_circle6 = /*#__PURE__*/React.createElement("circle", {
+    cx: 31.5,
+    cy: 30.5,
+    r: 2.5,
+    fill: "#92E95C"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M35 18l.898 2.764h2.906l-2.35 1.708.897 2.764L35 23.528l-2.351 1.708.898-2.764-2.351-1.708h2.906L35 18z",
+    fill: "#EE6363"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M55.5 30l.561 1.727h1.817l-1.47 1.068.561 1.727-1.469-1.067-1.47 1.068.562-1.728-1.47-1.068h1.817L55.5 30z",
+    fill: "#636AEE"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M50.5 8l.561 1.727h1.817l-1.47 1.068.561 1.728-1.469-1.068-1.47 1.068.562-1.728-1.47-1.068h1.817L50.5 8z",
+    fill: "#506ED0"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M14.5 25l.786 2.418h2.543l-2.058 1.495.786 2.419-2.057-1.495-2.057 1.495.786-2.419-2.058-1.495h2.543L14.5 25z",
+    fill: "#D35E5E"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "M61.746 20.95l1.039 5.092-4.929-1.646 3.89-3.446z",
+    fill: "#5093C9"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M24.301 16.212l4.646 3.894-5.695 2.076 1.05-5.97z",
+    fill: "#3ABE49"
+  })), _path7 || (_path7 = /*#__PURE__*/React.createElement("path", {
+    d: "M48.384 18.577l-1.3 3.21-2.13-2.73 3.43-.48z",
+    fill: "#1E5F25"
+  })), _path8 || (_path8 = /*#__PURE__*/React.createElement("path", {
+    d: "M2.5 28l2.165 3.75H.335L2.5 28z",
+    fill: "#E8A73E"
+  })), _path9 || (_path9 = /*#__PURE__*/React.createElement("path", {
+    fill: "#EE9F66",
+    d: "M48 26h4v4h-4z"
+  })), _path10 || (_path10 = /*#__PURE__*/React.createElement("path", {
+    fill: "#66E5EE",
+    d: "M71.107 26l2.788 1.107-1.107 2.788L70 28.788z"
+  })), _path11 || (_path11 = /*#__PURE__*/React.createElement("path", {
+    fill: "#D766EE",
+    d: "M52 0h4v4h-4z"
+  })));
+}
+export default SvgPopper;

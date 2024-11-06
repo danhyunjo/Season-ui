@@ -1,0 +1,24 @@
+var _rect, _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgGiftBoxRedBody(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 120,
+    height: 80,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 2.5,
+    y: 2.5,
+    width: 115,
+    height: 75,
+    rx: 7.5,
+    fill: "#fff",
+    stroke: "#B03B26",
+    strokeWidth: 5
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fill: "#B03B26",
+    d: "M39.13 0h2.61v77.419h-2.61zM79.13 2.58h2.61V80h-2.61z"
+  })));
+}
+export default SvgGiftBoxRedBody;

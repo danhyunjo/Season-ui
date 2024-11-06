@@ -1,0 +1,20 @@
+var _rect, _path;
+function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
+import * as React from "react";
+function SvgStopBtn(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 40,
+    height: 40,
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    width: 40,
+    height: 40,
+    rx: 20,
+    fill: "#B03B26"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M29.5 20l-15 8.66V11.34l15 8.66z",
+    fill: "#fff"
+  })));
+}
+export default SvgStopBtn;
