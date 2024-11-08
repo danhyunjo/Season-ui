@@ -2,25 +2,25 @@
   "name": "season-ui-2024",
   "version": "0.1.0",
   "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "files": [
-    "dist"
-  ],
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "dependencies": {
-    "@babel/runtime": "^7.26.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "swiper": "^11.1.14"
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "swiper": "^11.1.14",
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "build": "rollup -c",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "test": "react-scripts test"
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
