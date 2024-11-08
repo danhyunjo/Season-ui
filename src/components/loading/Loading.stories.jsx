@@ -10,7 +10,7 @@ export default {
   argTypes: {
     size: {
       type: 'number',
-      description: '로딩 컴포넌트의 크기를 px 단위로 조절합니다.',
+      description: '로딩 컴포넌트의 크기(px)',
     },
   },
 };

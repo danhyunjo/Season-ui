@@ -12,7 +12,7 @@ export default {
       control: {
         type: 'array',
       },
-      description: 'tab option들의 정보를 담은 배열입니다',
+      description: 'tab option들의 정보를 담은 배열',
     },
   },
 };

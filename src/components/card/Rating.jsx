@@ -6,32 +6,49 @@ import { ReactComponent as GingerIconEmpty } from '../../icons/ginger_blank.svg'
 
 const RatingContainer = styled.div`
   display: flex;
-  gap: 5px;
+  gap: ${({ iconWidth }) => iconWidth * 0.2}px;
+  cursor: pointer;
 `;
 
 const StarIcon = styled.div`
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+  width: ${({ iconWidth }) => iconWidth}px;
+  height: ${({ iconWidth }) => iconWidth}px;
   transition: transform 0.2s ease;
   transform-origin: center;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `;
 
 const FilledGinger = styled(GingerIconFilled)`
+  width: 110%;
+  height: 110%;
   position: relative;
   left: -4px;
   top: -3px;
 `;
-const Rating = ({ totalStars = 5 }) => {
+
+const EmptyGinger = styled(GingerIconEmpty)`
+  width: 100%;
+  height: 100%;
+`;
+
+const Rating = ({ totalStars, iconWidth }) => {
   const [rating, setRating] = useState(0);
+  const [hoverRating, setHoverRating] = useState(0);
   const ratingRef = useRef(null);
 
   const handleClick = index => {
     setRating(index + 1);
+  };
+
+  const handleMouseEnter = index => {
+    setHoverRating(index + 1);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverRating(0);
   };
 
   const handleOutsideClick = event => {
@@ -48,16 +65,19 @@ const Rating = ({ totalStars = 5 }) => {
   }, []);
 
   return (
-    <RatingContainer ref={ratingRef}>
-      {[...Array(totalStars)].map((_, index) => (
+    <RatingContainer ref={ratingRef} iconWidth={iconWidth}>
+      {Array.from({ length: totalStars }, (_, index) => (
         <StarIcon
           key={index}
+          iconWidth={iconWidth}
           onClick={e => {
             e.stopPropagation();
             handleClick(index);
           }}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
         >
-          {index < rating ? <FilledGinger /> : <GingerIconEmpty />}
+          {index < (hoverRating || rating) ? <FilledGinger /> : <EmptyGinger />}
         </StarIcon>
       ))}
     </RatingContainer>
@@ -66,10 +86,12 @@ const Rating = ({ totalStars = 5 }) => {
 
 Rating.propTypes = {
   totalStars: PropTypes.number,
+  iconWidth: PropTypes.number,
 };
 
 Rating.defaultProps = {
   totalStars: 5,
+  iconWidth: 40,
 };
 
 export default Rating;

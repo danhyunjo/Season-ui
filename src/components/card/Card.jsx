@@ -5,7 +5,7 @@ import Rating from './Rating';
 
 const CardStyle = styled.div`
   width: ${({ width }) => width}px;
-  height: ${({ height }) => height}px;
+  height: ${({ width }) => width * 1.5}px;
   background-color: #b03b26;
   border-radius: 15px;
   display: flex;
@@ -14,20 +14,20 @@ const CardStyle = styled.div`
   padding: ${({ width }) => width * 0.1}px;
   color: white;
   text-align: center;
+  margin: 0;
 `;
 
 const ImagePlaceholder = styled.div`
   width: 90%;
-  height: ${({ height }) => height * 0.5}px;
+  height: ${({ width }) => width * 0.75}px;
   background-color: white;
   border-radius: 10px;
-  margin-bottom: ${({ height }) => height * 0.05}px;
+  margin-bottom: ${({ width }) => width * 0.05}px;
 `;
 
 const Title = styled.h3`
   font-size: ${({ width }) => width * 0.09}px;
-  margin: ${({ height }) => height * 0.02}px 0
-    ${({ height }) => height * 0.01}px 0;
+  margin: ${({ width }) => width * 0.02}px 0 ${({ width }) => width * 0.01}px 0;
 `;
 
 const Description = styled.p`
@@ -38,18 +38,18 @@ const Description = styled.p`
 const IconRow = styled.div`
   display: flex;
   justify-content: center;
-  margin: ${({ height }) => height * 0.03}px 0;
+  margin: ${({ width }) => width * 0.03}px 0;
 `;
 
 const HireButton = styled.button`
-  padding: ${({ height }) => height * 0.05}px ${({ width }) => width * 0.1}px;
+  padding: ${({ width }) => width * 0.05}px ${({ width }) => width * 0.1}px;
   background-color: #f3dfcd;
   color: #b03b26;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  margin-top: ${({ height }) => height * 0.05}px;
+  margin-top: ${({ width }) => width * 0.05}px;
   font-size: ${({ width }) => width * 0.06}px;
 
   &:hover {
@@ -57,20 +57,18 @@ const HireButton = styled.button`
   }
 `;
 
-const Card = ({ title, description, buttonText, width, height }) => {
+const Card = ({ title, description, buttonText, width }) => {
+  const iconWidth = width * 0.15;
+
   return (
-    <CardStyle width={width} height={height}>
-      <ImagePlaceholder width={width} height={height} />
-      <Title width={width} height={height}>
-        {title}
-      </Title>
+    <CardStyle width={width}>
+      <ImagePlaceholder width={width} />
+      <Title width={width}>{title}</Title>
       <Description width={width}>{description}</Description>
-      <IconRow height={height}>
-        <Rating totalStars={5} />
+      <IconRow width={width}>
+        <Rating totalStars={5} iconWidth={iconWidth} />
       </IconRow>
-      <HireButton width={width} height={height}>
-        {buttonText}
-      </HireButton>
+      <HireButton width={width}>{buttonText}</HireButton>
     </CardStyle>
   );
 };
@@ -82,7 +80,6 @@ Card.propTypes = {
   description: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   width: PropTypes.number,
-  height: PropTypes.number,
 };
 
 Card.defaultProps = {
@@ -90,5 +87,4 @@ Card.defaultProps = {
   description: '저 밥 조금만 먹어요',
   buttonText: 'Hire Me',
   width: 200,
-  height: 300,
 };
