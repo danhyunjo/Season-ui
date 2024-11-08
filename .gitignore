@@ -1,18 +1,30 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
 
+# build output
+/dist
+/build
+/storybook-static
+
+# source code (do not exclude src/ folder entirely)
+# !src/**/* (specific files or temporary files can be added here if needed)
+
+# configuration
+/.storybook
+.eslintrc.*
+.prettierrc*
+babel.config.*
+.rollup.config.*
+
 # testing
 /coverage
 
-# production
-/build
-
 # misc
 .DS_Store
+.env
+.env.*
 .env.local
 .env.development.local
 .env.test.local
@@ -22,4 +34,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# storybook logs
 *storybook.log

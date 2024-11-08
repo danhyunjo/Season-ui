@@ -1,4 +1,3 @@
-// rollup.config.js
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
@@ -28,6 +27,7 @@ export default {
     babel({
       exclude: 'node_modules/**',
       presets: ['@babel/preset-react'],
+      babelHelpers: 'runtime',
     }),
     postcss({
       modules: true,
