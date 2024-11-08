@@ -12,7 +12,6 @@
 # !src/**/* (specific files or temporary files can be added here if needed)
 
 # configuration
-/.storybook
 .eslintrc.*
 .prettierrc*
 babel.config.*
