@@ -1,4 +1,4 @@
-# 🎄 {SEASON-UI} 우리 컴포넌트 이름
+# 🎄 {SEASON-UI}
 
 ![리드미소개사진](https://github.com/user-attachments/assets/736d3bc7-7195-4945-ad6c-c40a10d21a53)
 
