@@ -25,14 +25,14 @@
 다음 명령어로 패키지를 설치할 수 있습니다:
 
 ```bash
-npm install season-ui
+npm i christmas-party-ui
 ```
 
 ## 🎄 사용 예시
 
 자세한 사용 방법은 아래의 링크를 확인해주세요.
 
-[how to use party-component](https://672ac48d7049f10e7114725c-yihgmsplsk.chromatic.com/?path=/docs/components-tablist--docs) 
+[how to use party-component](https://672ac48d7049f10e7114725c-ldvjkulhdz.chromatic.com/) 
 
 ## 🎶 기여하기
 
