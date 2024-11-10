@@ -5,9 +5,10 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
 import svgr from '@svgr/rollup';
+import url from 'rollup-plugin-url';
 
 export default {
-  input: 'src/index.jsx',
+  input: 'src/index.js',
   output: [
     {
       file: 'dist/index.js',
@@ -22,8 +23,12 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
-    resolve(),
+    resolve({
+      extensions: ['.js', '.jsx'],
+    }),
     commonjs(),
+    url(),
+    svgr(),
     babel({
       exclude: 'node_modules/**',
       presets: ['@babel/preset-react'],
@@ -32,7 +37,6 @@ export default {
     postcss({
       modules: true,
     }),
-    svgr(),
     terser(),
   ],
 };

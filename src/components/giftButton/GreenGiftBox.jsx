@@ -4,7 +4,7 @@ import { ReactComponent as GreenHat } from '../../icons/giftBoxGreenHat.svg';
 import { ReactComponent as GreenBody } from '../../icons/giftBoxGreenBody.svg';
 import { ReactComponent as Popper } from '../../icons/popper.svg';
 
-const RedGiftBox = () => {
+const GreenGiftBox = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showPopper, setShowPopper] = useState(false);
 
@@ -40,7 +40,7 @@ const RedGiftBox = () => {
   );
 };
 
-export default RedGiftBox;
+export default GreenGiftBox;
 
 const GiftBox = styled.div`
   display: flex;
