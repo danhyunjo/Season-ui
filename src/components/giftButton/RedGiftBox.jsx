@@ -46,11 +46,15 @@ const GiftBox = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  position: relative;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Lid = styled.div`
-  margin-bottom: -20px;
-  margin-left: -3px;
+  position: absolute;
+  top: -53px;
+  left: -3px;
   z-index: 2;
   transition: transform 0.3s ease;
 
@@ -60,8 +64,10 @@ const Lid = styled.div`
 `;
 
 const BoxBody = styled.div`
+  position: relative
   z-index: 1;
-  position: relative;
+  display: flex;
+  justify-content: center;
 `;
 
 const StyledPopper = styled(Popper)`
