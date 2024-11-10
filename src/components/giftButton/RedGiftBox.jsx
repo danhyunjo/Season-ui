@@ -43,12 +43,12 @@ const RedGiftBox = () => {
 export default RedGiftBox;
 
 const GiftBox = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 `;
 
 const Lid = styled.div`
@@ -67,6 +67,7 @@ const BoxBody = styled.div`
   position: relative
   z-index: 1;
   display: flex;
+  justify-content: center;
 `;
 
 const StyledPopper = styled(Popper)`

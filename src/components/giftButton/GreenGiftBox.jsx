@@ -4,7 +4,7 @@ import { ReactComponent as GreenHat } from '../../icons/giftBoxGreenHat.svg';
 import { ReactComponent as GreenBody } from '../../icons/giftBoxGreenBody.svg';
 import { ReactComponent as Popper } from '../../icons/popper.svg';
 
-const RedGiftBox = () => {
+const GreenGiftBox = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [showPopper, setShowPopper] = useState(false);
 
@@ -40,15 +40,15 @@ const RedGiftBox = () => {
   );
 };
 
-export default RedGiftBox;
+export default GreenGiftBox;
 
 const GiftBox = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 `;
 
 const Lid = styled.div`
