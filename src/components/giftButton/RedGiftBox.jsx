@@ -67,7 +67,6 @@ const BoxBody = styled.div`
   position: relative
   z-index: 1;
   display: flex;
-  justify-content: center;
 `;
 
 const StyledPopper = styled(Popper)`
