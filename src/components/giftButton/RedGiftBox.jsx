@@ -43,18 +43,21 @@ const RedGiftBox = () => {
 export default RedGiftBox;
 
 const GiftBox = styled.div`
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   cursor: pointer;
   position: relative;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: flex-end;
+  width: 150px;
+  height: 130px;
+  padding-right: 8px;
 `;
 
 const Lid = styled.div`
   position: absolute;
-  top: -53px;
-  left: -3px;
+  bottom: 53px;
+  left: 11px;
   z-index: 2;
   transition: transform 0.3s ease;
 
@@ -64,7 +67,7 @@ const Lid = styled.div`
 `;
 
 const BoxBody = styled.div`
-  position: relative
+  position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
