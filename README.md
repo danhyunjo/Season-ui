@@ -1,6 +1,6 @@
-# 🎄 {SEASON-UI}
+# 🎄 christmas-party-ui
 
-![리드미소개사진](https://github.com/user-attachments/assets/736d3bc7-7195-4945-ad6c-c40a10d21a53)
+![리드미소개사진](https://github.com/user-attachments/assets/16991045-8180-4334-8814-e0d4e59c0a82)
 
 크리스마스 분위기를 손쉽게 어플리케이션에 적용할 수 있도록 만든 리액트 컴포넌트 모음입니다.
 
@@ -32,15 +32,15 @@ npm i christmas-party-ui
 
 자세한 사용 방법은 아래의 링크를 확인해주세요.
 
-[how to use party-component](https://672ac48d7049f10e7114725c-rngimtwgvk.chromatic.com/) 
+[how to use christmas-party-ui](https://672ac48d7049f10e7114725c-rngimtwgvk.chromatic.com/) 
 
 ## 🎶 기여하기
 
-기여는 언제나 환영입니다! {party-component} 프로젝트에는 행동 강령이 있으므로 모든 상호작용 과정에서 이를 준수해주시기를 바랍니다.
+기여는 언제나 환영입니다! christmas-party-ui 프로젝트에는 행동 강령이 있으므로 모든 상호작용 과정에서 이를 준수해주시기를 바랍니다.
 
 [{행동 강령 링크}]
 
-컴포넌트 추가, 문서화 개선, 버그 수정 등 어떤 기여든 좋습니다. 저희 {파티 컴포넌트} 프로젝트에 기여하는 자세한 방법은 아래의 링크를 확인해주세요.
+컴포넌트 추가, 문서화 개선, 버그 수정 등 어떤 기여든 좋습니다. 저희 christmas-party-ui 프로젝트에 기여하는 자세한 방법은 아래의 링크를 확인해주세요.
 
 [{기여 방법 링크}]
 
@@ -48,13 +48,14 @@ npm i christmas-party-ui
 
 ⭐️는 멋진 동기 부여가 됩니다. 컴포넌트를 제작한 멋있는 팀원들을 위해 ⭐️를 남겨 주세요.
 
-{season-ui}가 도움이 되었다면, 커피 한 잔으로 우리를 후원해 주세요.
+christmas-party-ui가 도움이 되었다면, 커피 한 잔으로 우리를 후원해 주세요.
 
-<img width="199" alt="바이미어커피배너" src="https://github.com/user-attachments/assets/155034f2-8549-440f-bb5a-6c22a00998d1">
+![bmc_qr](https://github.com/user-attachments/assets/e0da0c63-4e20-4e9a-ae58-0d59b6da15d9)
+
 
 ## 🌟 기여자 
 
-{season-ui} 프로젝트를 더욱 빛나게 만들어준 기여자들에게 감사드립니다.
+christmas-party-ui 프로젝트를 더욱 빛나게 만들어준 기여자들에게 감사드립니다.
 
 <img width="682" alt="기여자표시예시" src="https://github.com/user-attachments/assets/c846a986-972a-4cc9-b027-5a2ebc275ba6">
 
