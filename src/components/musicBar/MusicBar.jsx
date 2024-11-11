@@ -32,11 +32,9 @@ const AlbumCover = styled.div`
   height: ${({ width }) => width * 0.375 * 2.2}px;
   border-radius: 10px;
   overflow: hidden;
-
+  margin: auto 0;
   img,
   svg {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 `;
