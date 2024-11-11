@@ -84,7 +84,7 @@ Card.propTypes = {
 
 Card.defaultProps = {
   title: '루돌프 이름',
-  description: '저 밥 조금만 먹어요',
+  description: '저 밥 아주 조금 먹어요',
   buttonText: 'Hire Me',
   width: 200,
 };
